@@ -1,1 +1,2 @@
-# pin-efatra
+# PIN Efatra
+PIN code generator.
