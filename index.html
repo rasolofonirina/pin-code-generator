@@ -15,20 +15,45 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 wrap">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 wrap text-center">
                 <h2>PIN Code Generator</h2>
                 <div class="code-container">
-                    <input type="number" class="code" placeholder="0" min="0" max="9" disabled>
-                    <input type="number" class="code" placeholder="0" min="0" max="9" disabled>
-                    <input type="number" class="code" placeholder="0" min="0" max="9" disabled>
-                    <input type="number" class="code" placeholder="0" min="0" max="9" disabled>
+                    <input
+                        type="number"
+                        class="code"
+                        id="number1"
+                        placeholder="0"
+                        disabled>
+                    <input
+                        type="number"
+                        class="code"
+                        id="number2"
+                        placeholder="0"
+                        disabled>
+                    <input
+                        type="number"
+                        class="code"
+                        id="number3"
+                        placeholder="0"
+                        disabled>
+                    <input
+                        type="number"
+                        class="code"
+                        id="number4"
+                        placeholder="0"
+                        disabled>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-secondary btn-lg">Generate</button>
+                    <button
+                        type="button"
+                        class="btn btn-secondary btn-lg"
+                        id="generate">
+                        Generate
+                    </button>
                 </div>
             </div>
-            <div class="col-md-3"></div>
+            <div class="col-sm-3"></div>
         </div>        
     </div>
     
