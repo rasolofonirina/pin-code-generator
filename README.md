@@ -1,2 +1,1 @@
-# PIN Efatra
-PIN code generator.
+# PIN Code Generator (aka PCG)
