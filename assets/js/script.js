@@ -1,16 +1,14 @@
-const generate = document.getElementById('generate')
-const number1 = document.getElementById('number1')
-const number2 = document.getElementById('number2')
-const number3 = document.getElementById('number3')
-const number4 = document.getElementById('number4')
+const codeInputs = document.querySelectorAll('.code')
+const generateBtn = document.getElementById('generateBtn')
 const pinCode = []
 
 generateCode()
 
-generate.addEventListener('click', () => {
+generateBtn.addEventListener('click', () => {
     while(pinCode.length > 0) {
-        pinCode.pop();
+        pinCode.pop()
     }
+
     generateCode()
 })
 
@@ -30,10 +28,9 @@ function generateCode() {
     num4 = compare(num3, num4)
     pinCode.push(num4)
 
-    number1.value = pinCode[0]
-    number2.value = pinCode[1]
-    number3.value = pinCode[2]
-    number4.value = pinCode[3]
+    for (let i = 0; i < codeInputs.length; i++) {
+        codeInputs[i].setAttribute('value', pinCode[i])
+    }
 }
 
 function generateRandomNumber() {
