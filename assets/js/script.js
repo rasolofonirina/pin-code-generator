@@ -41,9 +41,5 @@ function generateRandomNumber() {
 }
 
 function compare(a, b) {
-    if (a === b) {
-        return (b === 9) ? 0 : (b + 1)
-    } else {
-        return b
-    }
+    return (a === b) ? ((b === 9) ? 0 : (b + 1)) : b
 }
